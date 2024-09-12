@@ -1,0 +1,58 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.done {
+  background-color: var(--done);
+  transition: background-color 0.3s;
+}
+
+.done:not(:last-child) {
+  margin-right: 10px;
+}
+
+.done:focus-visible {
+  outline: none;
+  background-color: var(--done-focus);
+}
+
+.done:hover {
+  background-color: var(--done-hover);
+}
+
+.done:active {
+  background-color: var(--done-active);
+}
+
+.delete {
+  margin-right: 10px;
+  background-color: var(--delete);
+  transition: background-color 0.3s;
+}
+
+.delete:focus-visible {
+  outline: none;
+  background-color: var(--delete-focus);
+}
+
+.delete:hover {
+  background-color: var(--delete-hover);
+}
+
+.delete:active {
+  background-color: var(--delete-active);
+}
+
+@media screen and (max-width: 1024px) {
+  .done {
+    font-size: 15px;
+  }
+
+  .delete {
+    font-size: 15px;
+  }
+}

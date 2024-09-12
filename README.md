@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Todo-List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://night-watch-frontend.github.io/todo-list/
 
-Currently, two official plugins are available:
+## Вэб приложение для плани.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Реализованы функции:
 
-## Expanding the ESLint configuration
+- добавление дела в список
+- удаление дела из списка
+- удаление первого дела из списка
+- удаление последнего дела из списка
+- возможность выделить все четные дела в списке
+- возможность выделить все нечетные дела в списке
+- возможность отметить дело выполненным
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Реализовано на React Js с использованием MobX
 
-- Configure the top-level `parserOptions` property like this:
+## Установка
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Клонирование репозитория
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+`git clone https://github.com/Night-watch-frontend/todo-list.git`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Переход в директорию todo-list
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+`cd todo-list`
+
+3. запуск команды установки
+
+`npm i`
+
+4. запуск команды для открытия проекта на локальном сервере
+
+`npm run dev`
+
+5. запуск команды для сборки проекта в продакшн
+
+`npm run build`
+
+6. запуск команды для просмотра собранного в продакшн проекта
+
+`npm run preview`
+
+## При разработке были использованы npm пакеты:
+
+    "mobx": "^6.13.2",
+
+    "mobx-react-lite": "^4.0.7",
+
+    "react": "^18.3.1",
+
+    "react-dom": "^18.3.1",
+
+     "@eslint/js": "^9.9.0",
+
+    "@types/react": "^18.3.3",
+
+    "@types/react-dom": "^18.3.0",
+
+    "@vitejs/plugin-react": "^4.3.1",
+
+    "eslint": "^9.9.0",
+
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+
+    "eslint-plugin-react-refresh": "^0.4.9",
+
+    "globals": "^15.9.0",
+
+    "typescript": "^5.5.3",
+
+    "typescript-eslint": "^8.0.1",
+
+    "vite": "^5.4.1"

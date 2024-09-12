@@ -1,0 +1,36 @@
+.form {
+  padding: 15px;
+}
+.input {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  width: 60%;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.btn {
+  background-color: var(--done);
+  transition: background-color 0.3s;
+}
+
+.btn:focus-visible {
+  outline: none;
+  background-color: var(--done-focus);
+}
+
+.btn:hover {
+  background-color: var(--done-hover);
+}
+
+.btn:active {
+  background-color: var(--done-active);
+}
+
+.btn:disabled {
+  border: none;
+  background-color: var(--done-disabled);
+  cursor: default;
+}

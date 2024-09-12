@@ -24,7 +24,7 @@ export const Todo = observer(() => {
             )}
             {(todos.length > 0 || doneTodos.length > 0) && (
               <div>
-                <p>{`Создано ${todos.length}`}</p>
+                <p>{`Создано ${todos.length + doneTodos.length}`}</p>
                 <p>{`Выполнено ${doneTodos.length}`}</p>
               </div>
             )}

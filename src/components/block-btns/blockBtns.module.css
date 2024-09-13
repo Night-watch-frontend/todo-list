@@ -28,6 +28,12 @@
   background-color: var(--done-active);
 }
 
+.done:disabled {
+  border: none;
+  background-color: var(--done-disabled);
+  cursor: default;
+}
+
 .delete {
   margin-right: 10px;
   background-color: var(--delete);

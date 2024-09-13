@@ -17,10 +17,16 @@ export const Btns = observer(() => {
       <button className={styles.delete} onClick={removeTodoItemLast}>
         {"Удалить последнее дело"}
       </button>
-      <button className={styles.done} onClick={selectTodoItemEven}>
+      <button
+        className={styles.done}
+        onClick={selectTodoItemEven}
+        disabled={todoStore.todos.length <= 1}>
         {"Выбрать четные дела"}
       </button>
-      <button className={styles.done} onClick={selectTodoItemOdd}>
+      <button
+        className={styles.done}
+        onClick={selectTodoItemOdd}
+        disabled={todoStore.todos.length === 0}>
         {"Выбрать нечетные дела"}
       </button>
     </div>

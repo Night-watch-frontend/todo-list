@@ -3,8 +3,10 @@
 }
 
 .list {
+  margin-bottom: 10px;
   background-color: var(--white);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .item {
